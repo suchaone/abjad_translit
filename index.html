@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Hebrew-Ugaritic Transliterator</title>
+  <meta name="description" content="Hebrew to Ugaritic Transliterator">
+  <meta name="author" content="suchaone">
+  <link rel="stylesheet" href="style.css?v=1.0">
+</head>
+
+<body onload="load()">
+  <div class="container">
+    <input id="source"></input>
+  </div>
+  <div class="container">
+    <select name="from" id="from">
+      <option value=0>From: 𐎜𐎂𐎗𐎚</option>
+      <option value=1>From: עברית</option>
+      <option value=2>From: عربية</option>
+      <option value=3>From: 𐤐𐤕</option>
+    <select>
+    <select name="to" id="to">
+      <option value=0>To: 𐎜𐎂𐎗𐎚</option>
+      <option value=1>To: עברית</option>
+      <option value=2>To: عربية</option>
+      <option value=3>To: 𐤐𐤕</option>
+    <select>
+    <button id="convert">Transliterate</button>
+  </div>
+  <p id="output"></p>
+  <p>👀 boxes instead of letters? install the <a href="https://dn-works.com/wp-content/uploads/2020/UFAS-Fonts/Aegean.zip">Aegean font</a></p>
+  <script src="script.js"></script>
+</body>
+</html>

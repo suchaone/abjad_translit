@@ -1,0 +1,44 @@
+@font-face {
+  font-family: Aegean;
+  src: url("./Aegean.otf") format("opentype");
+}
+
+body {
+  background: #0c0b18;
+  padding: 40px;
+  font-family: Aegean, sans-serif;
+}
+body, input, button, select {
+  font-size: 1.3rem;
+  text-align: center;
+  font-family: Aegean, sans-serif;
+}
+
+input {
+  border-radius: 5px;
+}
+
+#output {
+  font-size: 2rem;
+}
+
+p {
+  color: white;
+}
+
+a {
+  color: #ffae88;
+}
+
+.container {
+  display: flex;
+  max-width: 500px;
+  margin: auto;
+}
+
+.container > * {
+  display: flex-item;
+  flex-grow: 1;
+  margin: 5px;
+}
+
