@@ -15,6 +15,24 @@ body, input, button, select {
 }
 
 input {
+  padding: 10px;  
+}
+
+button {
+  border-radius: 5px;
+  background: #ffae88;
+  border: none;
+  border-bottom: 2px solid #b0613c;
+  color: black;
+  font-weight: bold;
+  padding: 7px;
+}
+
+button:active {
+  border: none;
+}
+
+input {
   border-radius: 5px;
 }
 
