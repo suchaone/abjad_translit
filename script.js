@@ -44,13 +44,24 @@ var abjads = [
   ["𐎟"," "," "," "," "," ", " "]
 ]
 
+var finals = [
+  ["𐎐","ן","ن","𐤍", "𐡍", "ܢ", "𐢔"],
+  ["𐎎","ם","م","𐤌", "𐡌", "ܡ", "𐢒"],
+  ["𐎔","ף","ف","𐤐", "𐡐", "ܦ", "𐢘"],
+  ["𐎕","ץ","ص","𐤑", "𐡑", "ܨ", "𐢙"],
+  ["𐎋","ך","ك","𐤊", "𐡊", "ܟ", "𐢎"],
+];
+
 function convert(str,source,dest) {
+  /*
   str = str.replace(new RegExp('ם', 'g'), 'מ');
   str = str.replace(new RegExp('ן', 'g'), 'נ');
   str = str.replace(new RegExp('ף', 'g'), 'פ');
   str = str.replace(new RegExp('ץ', 'g'), 'צ');
   str = str.replace(new RegExp('ך', 'g'), 'כ');
+  */
   abjads.map(x => str = str.replace(new RegExp(x[source],'g'),x[dest]));  
+  finals.map(x => str = str.replace(new RegExp(x[source],'g'),x[dest]));  
   return str;
 }
 
