@@ -16,6 +16,7 @@ body, input, button, select {
 
 input {
   padding: 10px;  
+  min-width: 0;
 }
 
 button {
@@ -26,6 +27,7 @@ button {
   color: black;
   font-weight: bold;
   padding: 7px;
+  min-width: 0;
 }
 
 button:active {
